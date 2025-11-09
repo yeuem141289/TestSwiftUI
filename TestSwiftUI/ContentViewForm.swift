@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import UIKit
 
 
 struct FormSection: Identifiable {
@@ -18,40 +18,35 @@ struct FormSection: Identifiable {
 struct ContentFormView: View {
     let employees = [
         FormSection(name: "Section 1", rowNames: ["Row 1", "Row 1"]),
-        FormSection(name: "Section 2", rowNames: ["Row 2", "Row 2"])
+        FormSection(name: "Section 2", rowNames: ["Row 2", "Row 2", "Row 2", "Row 2", "Row 2", "Row 2", "Row 2", "Row 2", "Row 2", "Row 2", "Row 2", "Row 2", "Row 2", "Row 2", "Row 2"])
     ]
     
     @State private var selectedRow: String? = nil
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(employees) { section in
-                    Section(header: Text(section.name)
-                        .font(.system(size: 14, weight: .bold))
-                        .foregroundColor(.black)
-                        .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))) {
-                            VStack(spacing: 0) {
-                                ForEach(section.rowNames, id: \.self) { rowName in
-                                    Button {
-                                        // 👇 Chỉ gán giá trị 1 lần khi user tap
-                                        selectedRow = rowName
-                                    } label: {
-                                        ContentFormCell(name: rowName)
-                                    }
-                                    .buttonStyle(.plain)
-                                }
-                            }
-                        }
-                        .textCase(nil) // Giữ nguyên font header
-                        .listRowBackground(Color.clear)
-                        .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                        .listRowSeparator(.hidden)
-                    
+            ViewThatFits(in: .vertical) {
+                VStack(spacing: 0) {
+                    sectionsContent
+                    Spacer()
+                }.padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
+                if #available(iOS 17.0, *) {
+                    List {
+                        sectionsContent
+                    } .listStyle(.grouped)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .scrollContentBackground(.hidden)
+                        .environment(\.defaultMinListHeaderHeight, 0)
+                        .listSectionSpacing(0)
+                } else {
+                    List {
+                        sectionsContent
+                    } .listStyle(.grouped)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .scrollContentBackground(.hidden)
+                        .environment(\.defaultMinListHeaderHeight, 0)
                 }
             }
-            .scrollBounceBehavior(.basedOnSize)
-            .listStyle(.plain)
             .navigationTitle("abcd")
             .navigationBarTitleDisplayMode(.inline)
             .scrollContentBackground(.hidden)     // bỏ nền xám bo góc
@@ -69,6 +64,35 @@ struct ContentFormView: View {
                         .navigationBarTitleDisplayMode(.inline)
                 }
             }
+        }
+    }
+    
+    private var sectionsContent: some View {
+        ForEach(employees) { section in
+            Section(header:   HStack {
+                Text(section.name)
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundColor(.black)
+                    .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
+                Spacer()}.padding(EdgeInsets(top: 20, leading: 0, bottom: 10, trailing: 0)),
+                footer: EmptyView()
+            ) {
+                    VStack(spacing: 0) {
+                        ForEach(section.rowNames, id: \.self) { rowName in
+                            Button {
+                                // 👇 Chỉ gán giá trị 1 lần khi user tap
+                                selectedRow = rowName
+                            } label: {
+                                ContentFormCell(name: rowName)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+               }
+                .textCase(nil) // Giữ nguyên font header
+                .listRowBackground(Color.clear)
+                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                .listRowSeparator(.hidden)
         }
     }
 }
