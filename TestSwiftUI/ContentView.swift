@@ -1,4 +1,4 @@
-//import SwiftUI
+import SwiftUI
 //import UserNotifications
 //import Combine
 //
@@ -225,49 +225,49 @@
 ////    }
 ////}
 //
-//struct CustomNavBar: View {
-//    var title: String
-//    var onBack: (() -> Void)?
-//    
-//    private var topSafeArea: CGFloat {
-//        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-//        let window = windowScene?.windows.first
-//        return window?.safeAreaInsets.top ?? 0
-//    }
-//    
-//    var body: some View {
-//        VStack(spacing: 0) {
-//            // Safe area trên (tai thỏ)
-//            Color.clear.frame(height: topSafeArea)
-//            
-//            ZStack {
-//                // 🔹 Title ở giữa ZStack
-//                Text(title)
-//                    .font(.headline)
-//                    .foregroundColor(.white)
-//                    .frame(maxWidth: .infinity)
-//                    .padding(.horizontal, 60)
-//                    .lineLimit(1)
-//                
-//                // 🔹 Nút back nằm chồng lên (align trái)
-//                HStack {
-//                    Button(action: { onBack?() }) {
-//                        Image(systemName: "chevron.left")
-//                            .font(.system(size: 17, weight: .medium))
-//                            .foregroundColor(.white)
-//                    }
-//                    Spacer()
-//                    Button(action: { onBack?() }) {
-//                        Image(systemName: "chevron.right")
-//                            .font(.system(size: 17, weight: .medium))
-//                            .foregroundColor(.white)
-//                    }
-//                }
-//                .padding(.horizontal)
-//            }
-//            .frame(height: 44)
-//            .background(Color.blue)
-//        }
-//        .background(Color.blue)
-//    }
-//}
+struct CustomNavBar: View {
+    var title: String
+    var onBack: (() -> Void)?
+    
+    private var topSafeArea: CGFloat {
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        let window = windowScene?.windows.first
+        return window?.safeAreaInsets.top ?? 0
+    }
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            // Safe area trên (tai thỏ)
+            Color.clear.frame(height: topSafeArea)
+            
+            ZStack {
+                // 🔹 Title ở giữa ZStack
+                Text(title)
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal, 60)
+                    .lineLimit(1)
+                
+                // 🔹 Nút back nằm chồng lên (align trái)
+                HStack {
+                    Button(action: { onBack?() }) {
+                        Image(systemName: "chevron.left")
+                            .font(.system(size: 17, weight: .medium))
+                            .foregroundColor(.white)
+                    }
+                    Spacer()
+                    Button(action: { onBack?() }) {
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 17, weight: .medium))
+                            .foregroundColor(.white)
+                    }
+                }
+                .padding(.horizontal)
+            }
+            .frame(height: 44)
+            .background(Color.blue)
+        }
+        .background(Color.blue)
+    }
+}

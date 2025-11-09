@@ -26,7 +26,8 @@ struct ContentFormView: View {
     
     var body: some View {
         NavigationStack {
-            Group {
+            VStack(spacing: 0) {
+                CustomNavBar(title: "fdsfsdf")
                 if #available(iOS 17.0, *) {
                     List {
                         sectionsContent
@@ -50,12 +51,7 @@ struct ContentFormView: View {
                         }
                 }
             }
-            .navigationTitle("abcd")
-            .navigationBarTitleDisplayMode(.inline)
-            .scrollContentBackground(.hidden)     // bỏ nền xám bo góc
             .background(Color(red: 247/255, green: 249/255, blue: 250/255)) // nền phẳng
-            .toolbarBackground(Color.white, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
             .navigationDestination(isPresented: Binding(
                 get: { selectedRow != nil },
                 set: { if !$0 { selectedRow = nil } }
@@ -66,7 +62,9 @@ struct ContentFormView: View {
                         .navigationTitle(row)
                         .navigationBarTitleDisplayMode(.inline)
                 }
-            }
+            }.navigationBarHidden(true)
+            .ignoresSafeArea(.container, edges: .top)
+            .toolbar(.hidden, for: .navigationBar)
         }
     }
     
