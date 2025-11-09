@@ -6,7 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3701C70BDE996E8D90BA2504 /* libPods-TestSwiftUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F69B3AB49CD18364BEA1D8 /* libPods-TestSwiftUI.a */; };
+		DE07B2112EC0CBA700644D37 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = DE07B2102EC0CBA700644D37 /* SwiftUIIntrospect */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE07B2172EC0CC7F00644D37 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3AE08A026E8201C27EC83135 /* Pods-TestSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-TestSwiftUI/Pods-TestSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		46F69B3AB49CD18364BEA1D8 /* libPods-TestSwiftUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestSwiftUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F235B3DF8A97527348AB2EC /* Pods-TestSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-TestSwiftUI/Pods-TestSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		DEBD61DC2EBE4C5B00BAA6F5 /* TestSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -23,17 +44,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3701C70BDE996E8D90BA2504 /* libPods-TestSwiftUI.a in Frameworks */,
+				DE07B2112EC0CBA700644D37 /* SwiftUIIntrospect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17295135B1881901A21C1ABD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46F69B3AB49CD18364BEA1D8 /* libPods-TestSwiftUI.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DEBD61D32EBE4C5B00BAA6F5 = {
 			isa = PBXGroup;
 			children = (
 				DEBD61DE2EBE4C5B00BAA6F5 /* TestSwiftUI */,
 				DEBD61DD2EBE4C5B00BAA6F5 /* Products */,
+				E81C17E8314576A19A64BA39 /* Pods */,
+				17295135B1881901A21C1ABD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +78,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E81C17E8314576A19A64BA39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F235B3DF8A97527348AB2EC /* Pods-TestSwiftUI.debug.xcconfig */,
+				3AE08A026E8201C27EC83135 /* Pods-TestSwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,9 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEBD61E72EBE4C5D00BAA6F5 /* Build configuration list for PBXNativeTarget "TestSwiftUI" */;
 			buildPhases = (
+				EF0B4F6ADB335E3F37D3D7EE /* [CP] Check Pods Manifest.lock */,
 				DEBD61D82EBE4C5B00BAA6F5 /* Sources */,
 				DEBD61D92EBE4C5B00BAA6F5 /* Frameworks */,
 				DEBD61DA2EBE4C5B00BAA6F5 /* Resources */,
+				DE07B2172EC0CC7F00644D37 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -64,8 +108,6 @@
 				DEBD61DE2EBE4C5B00BAA6F5 /* TestSwiftUI */,
 			);
 			name = TestSwiftUI;
-			packageProductDependencies = (
-			);
 			productName = TestSwiftUI;
 			productReference = DEBD61DC2EBE4C5B00BAA6F5 /* TestSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -94,6 +136,9 @@
 			);
 			mainGroup = DEBD61D32EBE4C5B00BAA6F5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DE07B20F2EC0CBA700644D37 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DEBD61DD2EBE4C5B00BAA6F5 /* Products */;
 			projectDirPath = "";
@@ -113,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EF0B4F6ADB335E3F37D3D7EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DEBD61D82EBE4C5B00BAA6F5 /* Sources */ = {
@@ -246,6 +316,7 @@
 		};
 		DEBD61E82EBE4C5D00BAA6F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F235B3DF8A97527348AB2EC /* Pods-TestSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -261,7 +332,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,6 +356,7 @@
 		};
 		DEBD61E92EBE4C5D00BAA6F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AE08A026E8201C27EC83135 /* Pods-TestSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,7 +372,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE07B20F2EC0CBA700644D37 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 26.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE07B2102EC0CBA700644D37 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE07B20F2EC0CBA700644D37 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEBD61D42EBE4C5B00BAA6F5 /* Project object */;
 }

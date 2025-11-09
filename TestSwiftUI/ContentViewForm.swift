@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import UIKit
+import SwiftUIIntrospect
 
 
 struct FormSection: Identifiable {
@@ -22,29 +22,32 @@ struct ContentFormView: View {
     ]
     
     @State private var selectedRow: String? = nil
+    @State private var isList: Bool = false
     
     var body: some View {
         NavigationStack {
-            ViewThatFits(in: .vertical) {
-                VStack(spacing: 0) {
-                    sectionsContent
-                    Spacer()
-                }.padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
+            Group {
                 if #available(iOS 17.0, *) {
                     List {
                         sectionsContent
-                    } .listStyle(.grouped)
+                    } .listStyle(.plain)
                         .navigationBarTitleDisplayMode(.inline)
                         .scrollContentBackground(.hidden)
                         .environment(\.defaultMinListHeaderHeight, 0)
-                        .listSectionSpacing(0)
+                        .scrollBounceBehavior(.basedOnSize)
                 } else {
                     List {
                         sectionsContent
-                    } .listStyle(.grouped)
+                    } .listStyle(.plain)
                         .navigationBarTitleDisplayMode(.inline)
                         .scrollContentBackground(.hidden)
                         .environment(\.defaultMinListHeaderHeight, 0)
+                        .introspect(.scrollView, on: .iOS(.v16)) { scrollView in
+                            // Disable scrolling if content size is smaller than the container size
+                            if scrollView.contentSize.height < scrollView.bounds.height {
+                                scrollView.isScrollEnabled = false
+                            }
+                        }
                 }
             }
             .navigationTitle("abcd")
@@ -74,25 +77,25 @@ struct ContentFormView: View {
                     .font(.system(size: 14, weight: .bold))
                     .foregroundColor(.black)
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
-                Spacer()}.padding(EdgeInsets(top: 20, leading: 0, bottom: 10, trailing: 0)),
-                footer: EmptyView()
+                Spacer()}.padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0)),
+                    footer: EmptyView()
             ) {
-                    VStack(spacing: 0) {
-                        ForEach(section.rowNames, id: \.self) { rowName in
-                            Button {
-                                // 👇 Chỉ gán giá trị 1 lần khi user tap
-                                selectedRow = rowName
-                            } label: {
-                                ContentFormCell(name: rowName)
-                            }
-                            .buttonStyle(.plain)
+                VStack(spacing: 0) {
+                    ForEach(section.rowNames, id: \.self) { rowName in
+                        Button {
+                            // 👇 Chỉ gán giá trị 1 lần khi user tap
+                            selectedRow = rowName
+                        } label: {
+                            ContentFormCell(name: rowName)
                         }
+                        .buttonStyle(.plain)
                     }
-               }
-                .textCase(nil) // Giữ nguyên font header
-                .listRowBackground(Color.clear)
-                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                .listRowSeparator(.hidden)
+                }
+            }
+            .textCase(nil) // Giữ nguyên font header
+            .listRowBackground(Color.clear)
+            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+            .listRowSeparator(.hidden)
         }
     }
 }
