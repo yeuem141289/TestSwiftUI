@@ -34,13 +34,16 @@ struct HomeViewPicker: View {
     @State private var spread: Spread = .none
     var body: some View {
         
-        List {
-            Picker("Flavor", selection: $spread) {
-                ForEach(Spread.allCases) { flavor in
-                    Text(String(describing: spread))
+        Form {
+            Section {
+                Picker(selection: $spread, label: Text("Bread")) {
+                    ForEach(Spread.allCases) { flavor in
+                        Text(String(describing: flavor))
+                    }
                 }
             }
         }
+        .environment(\.isEnabled, spread != .Dep1)
     }
 }
 
@@ -70,6 +73,7 @@ struct HomeViewPickerMenu: View {
                         .tag(spread)
                 }
             }
+            
         } label: {
             // Giao diện bạn tự thiết kế, không còn mũi tên mặc định
             Text(spread.displayName)
@@ -78,13 +82,13 @@ struct HomeViewPickerMenu: View {
         }    }
 }
 
-@main
-struct HomeViewPickerApp: App {
-    var body: some Scene {
-        WindowGroup {
-          //  HomeViewPicker()
-            HomeViewPickerMenu()
-        }
-    }
-}
-
+//@main
+//struct HomeViewPickerApp: App {
+//    var body: some Scene {
+//        WindowGroup {
+//          //  HomeViewPicker()
+//            HomeViewPicker()
+//        }
+//    }
+//}
+//
