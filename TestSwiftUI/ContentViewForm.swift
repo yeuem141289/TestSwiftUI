@@ -129,13 +129,13 @@ struct ContentFormCell: View, Identifiable {
     }
 }
 
-@main
-struct DeeplinkRouterApp: App {
-    
-    var body: some Scene {
-        WindowGroup {
-            ContentFormView()
-        }
-    }
-}
-
+//@main
+//struct DeeplinkRouterApp: App {
+//    
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentFormView()
+//        }
+//    }
+//}
+//
