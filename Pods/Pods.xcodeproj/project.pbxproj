@@ -7,21 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA2284150E9E93E3E25852B708265D93 /* Pods-TestSwiftUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B2EAF4BC00DC2CEA806349445766C2 /* Pods-TestSwiftUI-dummy.m */; };
+		3AC33B562E74E1E6870BBB2EAB24FDA7 /* HCSStarRatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = E3222AA0BA405973790F61ED85997C3A /* HCSStarRatingView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E462F7D482B0E7CFF7AD8516743573D /* Pods-TestSwiftUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B2EAF4BC00DC2CEA806349445766C2 /* Pods-TestSwiftUI-dummy.m */; };
+		7217D958B5C3A446094960391F2474C1 /* HCSStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E034264AD8FD26A20E575CBFF5F7B0A /* HCSStarRatingView.m */; };
+		B87AD80634544A05F6FA15AB5600AF7B /* HCSStarRatingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F822C8219925C068CE57C2835771775A /* HCSStarRatingView-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2B01255DC24465AF5EF131E3C2C6253C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFFEEF8FEF1DD6BA9599FF2612CD2B6F;
+			remoteInfo = HCSStarRatingView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0E034264AD8FD26A20E575CBFF5F7B0A /* HCSStarRatingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCSStarRatingView.m; path = HCSStarRatingView/HCSStarRatingView.m; sourceTree = "<group>"; };
+		23BFB53F621FA7319EB7966F358900F3 /* HCSStarRatingView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCSStarRatingView.release.xcconfig; sourceTree = "<group>"; };
+		41B72F4F981A545809C1EB158DA62C65 /* HCSStarRatingView */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = HCSStarRatingView; path = libHCSStarRatingView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A64723BBDB2CC3EC031A660E31F5F00 /* Pods-TestSwiftUI */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-TestSwiftUI"; path = "libPods-TestSwiftUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53483E7A7EAB17610111AF56D1B2FE68 /* Pods-TestSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		90914E894CE8B6E0AD2B68E9081962B0 /* Pods-TestSwiftUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestSwiftUI-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ABCBF99828D10488843544620CA2EBE7 /* Pods-TestSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		C9B2EAF4BC00DC2CEA806349445766C2 /* Pods-TestSwiftUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestSwiftUI-dummy.m"; sourceTree = "<group>"; };
+		E3222AA0BA405973790F61ED85997C3A /* HCSStarRatingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCSStarRatingView.h; path = HCSStarRatingView/HCSStarRatingView.h; sourceTree = "<group>"; };
+		EF81FD9C9CF0ED8B2ACA42395C7B6BA6 /* HCSStarRatingView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCSStarRatingView.debug.xcconfig; sourceTree = "<group>"; };
+		F5634FF1856DC78555F03AAB5DFAD435 /* HCSStarRatingView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HCSStarRatingView-prefix.pch"; sourceTree = "<group>"; };
+		F822C8219925C068CE57C2835771775A /* HCSStarRatingView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HCSStarRatingView-dummy.m"; sourceTree = "<group>"; };
 		F8D57264D0E63E9FA247C5FCE8BCDF2F /* Pods-TestSwiftUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestSwiftUI-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D9BF557CBF1C905A20184BECB526A011 /* Frameworks */ = {
+		9F0641BEA62665AEF5946355F9AE96FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3341C4D0588532FB4D5F788295BC48D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +71,17 @@
 			path = "Target Support Files/Pods-TestSwiftUI";
 			sourceTree = "<group>";
 		};
+		39C6645FB7665F3C7ACAF4A32A64DAB6 /* HCSStarRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				E3222AA0BA405973790F61ED85997C3A /* HCSStarRatingView.h */,
+				0E034264AD8FD26A20E575CBFF5F7B0A /* HCSStarRatingView.m */,
+				8E117C5B633950E7DA84525FA56063F3 /* Support Files */,
+			);
+			name = HCSStarRatingView;
+			path = HCSStarRatingView;
+			sourceTree = "<group>";
+		};
 		53F502CFA4D6A4A1FC31BDFE0935AFA5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -52,12 +90,42 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		7C36B92298BEB388176E56F8531234BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39C6645FB7665F3C7ACAF4A32A64DAB6 /* HCSStarRatingView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E117C5B633950E7DA84525FA56063F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F822C8219925C068CE57C2835771775A /* HCSStarRatingView-dummy.m */,
+				F5634FF1856DC78555F03AAB5DFAD435 /* HCSStarRatingView-prefix.pch */,
+				EF81FD9C9CF0ED8B2ACA42395C7B6BA6 /* HCSStarRatingView.debug.xcconfig */,
+				23BFB53F621FA7319EB7966F358900F3 /* HCSStarRatingView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HCSStarRatingView";
+			sourceTree = "<group>";
+		};
+		AE8FBF281FBAB3C1F0EE45FFB6500319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41B72F4F981A545809C1EB158DA62C65 /* HCSStarRatingView */,
+				4A64723BBDB2CC3EC031A660E31F5F00 /* Pods-TestSwiftUI */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				EF5202A9FC6165F7974E04C3C8DEE8E1 /* Products */,
+				7C36B92298BEB388176E56F8531234BD /* Pods */,
+				AE8FBF281FBAB3C1F0EE45FFB6500319 /* Products */,
 				53F502CFA4D6A4A1FC31BDFE0935AFA5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -69,18 +137,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EF5202A9FC6165F7974E04C3C8DEE8E1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4A64723BBDB2CC3EC031A660E31F5F00 /* Pods-TestSwiftUI */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		73A0EEF580A7A7579CEAF3C68ED42AFA /* Headers */ = {
+		404E5A952816D014136F12CF5CC7AD81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC33B562E74E1E6870BBB2EAB24FDA7 /* HCSStarRatingView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D0A4998DF1A4CF4C091352486DE9544 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,19 +160,37 @@
 /* Begin PBXNativeTarget section */
 		4CA71A27F0CC8BA239D1648CCEFEB9F6 /* Pods-TestSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7373407A3D71599AA2B4A6E1266816EA /* Build configuration list for PBXNativeTarget "Pods-TestSwiftUI" */;
+			buildConfigurationList = 264A88A5D9E92905B6938D9A637DED07 /* Build configuration list for PBXNativeTarget "Pods-TestSwiftUI" */;
 			buildPhases = (
-				73A0EEF580A7A7579CEAF3C68ED42AFA /* Headers */,
-				7BA11D9D074C4AA4BB9214F3716D0D56 /* Sources */,
-				D9BF557CBF1C905A20184BECB526A011 /* Frameworks */,
+				9D0A4998DF1A4CF4C091352486DE9544 /* Headers */,
+				B04225AF47095965E5CCCAA4F4FE177D /* Sources */,
+				D3341C4D0588532FB4D5F788295BC48D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A54D0B577E5A16FFF6E86464CA62ED98 /* PBXTargetDependency */,
+			);
+			name = "Pods-TestSwiftUI";
+			productName = "Pods-TestSwiftUI";
+			productReference = 4A64723BBDB2CC3EC031A660E31F5F00 /* Pods-TestSwiftUI */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AFFEEF8FEF1DD6BA9599FF2612CD2B6F /* HCSStarRatingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA62E6470198D913414725F99F36B984 /* Build configuration list for PBXNativeTarget "HCSStarRatingView" */;
+			buildPhases = (
+				404E5A952816D014136F12CF5CC7AD81 /* Headers */,
+				2366912AD634A50E12E20C5D2A2F544F /* Sources */,
+				9F0641BEA62665AEF5946355F9AE96FB /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-TestSwiftUI";
-			productName = "Pods-TestSwiftUI";
-			productReference = 4A64723BBDB2CC3EC031A660E31F5F00 /* Pods-TestSwiftUI */;
+			name = HCSStarRatingView;
+			productName = HCSStarRatingView;
+			productReference = 41B72F4F981A545809C1EB158DA62C65 /* HCSStarRatingView */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -127,30 +213,76 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = EF5202A9FC6165F7974E04C3C8DEE8E1 /* Products */;
+			productRefGroup = AE8FBF281FBAB3C1F0EE45FFB6500319 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				AFFEEF8FEF1DD6BA9599FF2612CD2B6F /* HCSStarRatingView */,
 				4CA71A27F0CC8BA239D1648CCEFEB9F6 /* Pods-TestSwiftUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7BA11D9D074C4AA4BB9214F3716D0D56 /* Sources */ = {
+		2366912AD634A50E12E20C5D2A2F544F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2284150E9E93E3E25852B708265D93 /* Pods-TestSwiftUI-dummy.m in Sources */,
+				7217D958B5C3A446094960391F2474C1 /* HCSStarRatingView.m in Sources */,
+				B87AD80634544A05F6FA15AB5600AF7B /* HCSStarRatingView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04225AF47095965E5CCCAA4F4FE177D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E462F7D482B0E7CFF7AD8516743573D /* Pods-TestSwiftUI-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A54D0B577E5A16FFF6E86464CA62ED98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HCSStarRatingView;
+			target = AFFEEF8FEF1DD6BA9599FF2612CD2B6F /* HCSStarRatingView */;
+			targetProxy = 2B01255DC24465AF5EF131E3C2C6253C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		11FD9661B80EC37E7B7AE5831C6C2600 /* Release */ = {
+		020F19AB454366977545848CD1B38820 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABCBF99828D10488843544620CA2EBE7 /* Pods-TestSwiftUI.release.xcconfig */;
+			baseConfigurationReference = EF81FD9C9CF0ED8B2ACA42395C7B6BA6 /* HCSStarRatingView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/HCSStarRatingView/HCSStarRatingView-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = HCSStarRatingView;
+				PRODUCT_NAME = HCSStarRatingView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		071B319765F59A0B7CEB3C272FB98E82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53483E7A7EAB17610111AF56D1B2FE68 /* Pods-TestSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -168,9 +300,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -234,9 +365,9 @@
 			};
 			name = Release;
 		};
-		B016C642827514A99F112146FC1AE9F0 /* Debug */ = {
+		A9E883A83CA43B90C3D2EADBEE7B3EE4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53483E7A7EAB17610111AF56D1B2FE68 /* Pods-TestSwiftUI.debug.xcconfig */;
+			baseConfigurationReference = ABCBF99828D10488843544620CA2EBE7 /* Pods-TestSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -254,8 +385,37 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
+		};
+		DF8462131BF2A588E9EBC6C677A4C134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23BFB53F621FA7319EB7966F358900F3 /* HCSStarRatingView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/HCSStarRatingView/HCSStarRatingView-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = HCSStarRatingView;
+				PRODUCT_NAME = HCSStarRatingView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		F4FF6A0D1970CA9705974E3CB2134802 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -326,6 +486,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		264A88A5D9E92905B6938D9A637DED07 /* Build configuration list for PBXNativeTarget "Pods-TestSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071B319765F59A0B7CEB3C272FB98E82 /* Debug */,
+				A9E883A83CA43B90C3D2EADBEE7B3EE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -335,11 +504,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7373407A3D71599AA2B4A6E1266816EA /* Build configuration list for PBXNativeTarget "Pods-TestSwiftUI" */ = {
+		DA62E6470198D913414725F99F36B984 /* Build configuration list for PBXNativeTarget "HCSStarRatingView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B016C642827514A99F112146FC1AE9F0 /* Debug */,
-				11FD9661B80EC37E7B7AE5831C6C2600 /* Release */,
+				020F19AB454366977545848CD1B38820 /* Debug */,
+				DF8462131BF2A588E9EBC6C677A4C134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

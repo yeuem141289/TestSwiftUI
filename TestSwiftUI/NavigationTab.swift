@@ -54,12 +54,12 @@ struct HomeViewTabNavigation: View {
     }
 }
 
-@main
-struct NavigationTabApp: App {
-    var body: some Scene {
-        WindowGroup {
-            //  HomeViewPicker()
-            HomeViewTabNavigation()
-        }
-    }
-}
+//@main
+//struct NavigationTabApp: App {
+//    var body: some Scene {
+//        WindowGroup {
+//            //  HomeViewPicker()
+//            HomeViewTabNavigation()
+//        }
+//    }
+//}

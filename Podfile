@@ -2,7 +2,7 @@
 # platform :ios, '16.0'
 
 def endGPods
-   
+  pod 'HCSStarRatingView', '~> 1.5'
 end
 
 

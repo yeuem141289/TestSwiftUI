@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3701C70BDE996E8D90BA2504 /* libPods-TestSwiftUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F69B3AB49CD18364BEA1D8 /* libPods-TestSwiftUI.a */; };
-		DE07B2112EC0CBA700644D37 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = DE07B2102EC0CBA700644D37 /* SwiftUIIntrospect */; };
+		BAFEAE6105C59E21A905997F /* libPods-TestSwiftUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F69B3AB49CD18364BEA1D8 /* libPods-TestSwiftUI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,8 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3701C70BDE996E8D90BA2504 /* libPods-TestSwiftUI.a in Frameworks */,
-				DE07B2112EC0CBA700644D37 /* SwiftUIIntrospect in Frameworks */,
+				BAFEAE6105C59E21A905997F /* libPods-TestSwiftUI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +122,7 @@
 				TargetAttributes = {
 					DEBD61DB2EBE4C5B00BAA6F5 = {
 						CreatedOnToolsVersion = 26.0;
+						LastSwiftMigration = 2610;
 					};
 				};
 			};
@@ -136,9 +135,6 @@
 			);
 			mainGroup = DEBD61D32EBE4C5B00BAA6F5;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				DE07B20F2EC0CBA700644D37 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
-			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DEBD61DD2EBE4C5B00BAA6F5 /* Products */;
 			projectDirPath = "";
@@ -320,8 +316,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
@@ -348,6 +346,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftUI/TestSwiftUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,8 +360,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
@@ -388,6 +390,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftUI/TestSwiftUI-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,25 +419,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		DE07B20F2EC0CBA700644D37 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/siteline/swiftui-introspect";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 26.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DE07B2102EC0CBA700644D37 /* SwiftUIIntrospect */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE07B20F2EC0CBA700644D37 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
-			productName = SwiftUIIntrospect;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEBD61D42EBE4C5B00BAA6F5 /* Project object */;
 }
