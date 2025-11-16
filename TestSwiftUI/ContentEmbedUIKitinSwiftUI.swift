@@ -55,12 +55,12 @@ struct HomeViewEmbedUIKit: View {
 }
 
 
-@main
-struct DeeplinkRouterApp: App {
-
-    var body: some Scene {
-        WindowGroup {
-            HomeViewEmbedUIKit()
-        }
-    }
-}
+//@main
+//struct DeeplinkRouterApp: App {
+//
+//    var body: some Scene {
+//        WindowGroup {
+//            HomeViewEmbedUIKit()
+//        }
+//    }
+//}
